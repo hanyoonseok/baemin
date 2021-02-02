@@ -1,4 +1,41 @@
 .main{
-    height:1440px;
+    position:relative;
     background-color: #2ac1bc;
+    z-index: -1;
+    height:720px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.text{
+    position:absolute;
+    top:0;
+    padding:0 300px;
+    padding-top: 135px;
+    color:white;
+}
+.text p{
+    font-family: 'Jua', sans-serif;
+    font-size: 100px;
+}
+
+.driver{
+    text-align: right;
+    padding-top: 550px;
+}
+img{
+    
+    width:200px;
+    height:170px;
+}
+.slide{
+    animation:slide 1s forwards;
+}
+@keyframes slide{
+    0%{
+        transform:translateX(0%);
+    }
+    100%{
+        transform:translateX(-700px);
+    }
 }

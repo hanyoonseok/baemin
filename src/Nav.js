@@ -3,6 +3,8 @@ import './css/Nav.css'
 
 export default function Nav(){
     const [position, setPosition] = useState(0);
+    const [isScale, setScale]=useState(true);
+
     function onScroll(){
         setPosition(window.pageYOffset);
         console.log(position);
@@ -25,14 +27,20 @@ export default function Nav(){
                     <i className="fab fa-youtube"></i>
                     <i className="fab fa-twitter"></i>
                 </div>
+                <div className="download">
+                    <img src="../images/blackapp.png" style={{opacity:(position-400)/300}}/>
+                </div>
             </nav>
             <div>
-                <img src="../images/back.jpg"/>
+                <img src="../images/back.jpg" className={isScale? "active" : ""}/>
             </div>
             <div className="gongbok">
                 <p>공복에</p>
                 <p>떡볶이가</p>
                 <p>그리울 때</p>
+            </div>
+            <div className="app">
+                <img src="../images/app.png"/>
             </div>
         </div>
     )
