@@ -9,10 +9,12 @@
 
 .text{
     position:absolute;
+    width:100%;
     top:0;
     padding:0 300px;
-    padding-top: 135px;
+    padding-top: 160px;
     color:white;
+    white-space: nowrap;
 }
 .text p{
     font-family: 'Jua', sans-serif;
@@ -22,9 +24,9 @@
 .driver{
     text-align: right;
     padding-top: 550px;
+    width:100%;
 }
 img{
-    
     width:200px;
     height:170px;
 }
@@ -38,4 +40,24 @@ img{
     100%{
         transform:translateX(-700px);
     }
+}
+@media screen and (max-width:1050px){
+    .text{
+        padding-left:150px;
+    }
+    .text p{
+        font-size: 80px;
+    }
+    .driver{
+        animation:slide 1s reverse;
+    }
+}
+@media screen and (max-width:750px){
+    .text{
+        padding-left:50px;
+    }
+    .text p{
+        font-size: 70px;
+    }
+    
 }

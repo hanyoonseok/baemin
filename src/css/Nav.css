@@ -91,14 +91,19 @@
     cursor:pointer;
 }
 
+@media screen and (max-width:1050px){
+    .nav-links{
+        display:none;
+    }
+    .download{
+        right:100px;
+    }
+}
 @media screen and (max-width:950px){
     .nav-logo{
         padding-left:200px;
     }
-
-    .nav-links{
-        display:none;
-    }
+    
     .gongbok{
         padding-left:200px;
     }
@@ -119,5 +124,9 @@
     }
     .gongbok p{
         font-size: 70px;
+    }
+    .download{
+        top: 70px;
+        right:10px;
     }
 }
