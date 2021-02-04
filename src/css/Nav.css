@@ -5,34 +5,13 @@
     font-family: 'Jua', sans-serif;
 }
 
-@keyframes sscale{
-    0%{
-        transform:scale(1.2);
-    }
-    100%{
-        transform:scale(1.0);
-    }
-}
-
-.nav{
-    background-image: url("../images/back.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position:relative;
-    height:100vh;
-    width: 100%;
-    object-fit: contain;
-    animation:sscale 2s 1;
-}
-
 .navbar{
     display:flex;
     justify-content: space-between;
-    align-items: center;
     position:fixed;
     width:100%;
-    padding:55px 0;
+    height:100vh;
+    padding:55px 0px;
     color:white;
     font-size: 30px;
 }
@@ -52,26 +31,10 @@
     padding-right: 30px;
 }
 
-.gongbok{
-    position:absolute;
-    width:100%;
-    top:0;
-    padding:0 300px;
-    padding-top: 130px;
-    color:white;
-    white-space: nowrap;
-}
-.gongbok p{
-    font-family: 'Jua', sans-serif;
-    font-size: 100px;
-}
-
 .download{
     position:fixed;
     top:120px;
     right:250px;
-    /* padding-left: 770px;
-    padding-top: 100px; */
 }
 .download img{
     width:200px;
@@ -79,51 +42,23 @@
     cursor:pointer;
 }
 
-.app{
-    position:relative;
-}
-.app img{
-    position:absolute;  
-    bottom:0;
-    right:0;
-    width:250px;
-    height:280px;
-    cursor:pointer;
-}
-
 @media screen and (max-width:1050px){
     .nav-links{
         display:none;
     }
+    .nav-logo{
+        padding-left:150px;
+    }
     .download{
         right:100px;
-    }
-}
-@media screen and (max-width:950px){
-    .nav-logo{
-        padding-left:200px;
-    }
-    
-    .gongbok{
-        padding-left:200px;
-    }
-    .gongbok p{
-        font-size: 85px;
     }
 }
 @media screen and (max-width:750px){
     .nav-logo{
         padding-left:50px;
     }
-
     .nav-links{
         display:none;
-    }
-    .gongbok{
-        padding-left:50px;
-    }
-    .gongbok p{
-        font-size: 70px;
     }
     .download{
         top: 70px;
