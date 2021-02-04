@@ -1,31 +1,32 @@
-/* @keyframes down{
-    0%{
-
-    }
-    100%{
-    transform:translate3d(0,720,0);
-    }
-}
-@keyframes down{
-    0%{
-
-    }
-    100%{
-    transform:translate3d(0,-720,0);
-    }
-} */
 .main{
     position:relative;
     z-index: -1;
     height:100%;
     width: 100%;
 }
-/* .up{
-    animation:up 1s 1
+
+.download{
+    opacity:0;
+    display:flex;
+    position:fixed;
+    z-index: 10;
+    padding:55px 0px;
+    top:75px;
+    right:265px;
+}
+.download img{
+    width:200px;
+    height:220px;
+    cursor:pointer;
+}
+@keyframes ddown{
+    0%{opacity:0;}
+    100%{opacity:1;}
 }
 .down{
-    animation:down 1s 1
-} */
+    animation:ddown 1s ease-in forwards;
+}
+
 @keyframes sscale{
     0%{
         transform:scale(1.2);
@@ -34,7 +35,6 @@
         transform:scale(1.0);
     }
 }
-
 .section1{
     height:100vh;
     width:100%;
@@ -45,16 +45,11 @@
     background-repeat: no-repeat;
     animation:sscale 2s 1;
 }
-
-.section2{
+.section{
     background-color: #2ac1bc;
     position:relative;
 }
 
-.section3{
-    background-color: #2ac1bc;
-    position:relative;
-}
 .text{
     position:absolute;
     width:100%;
@@ -80,7 +75,7 @@
 
 .driver{
     text-align: right;
-    padding-top: 550px;
+    padding-top: 530px;
     width:100%;
 }
 .driver img{
@@ -89,9 +84,8 @@
 }
 
 .slide{
-    animation:slide 1s forwards;
+    animation:slide 2s forwards;
 }
-
 @keyframes slide{
     0%{
         transform:translateX(0%);
@@ -100,6 +94,7 @@
         transform:translateX(-700px);
     }
 }
+
 @media screen and (max-width:1050px){
     .text{
         padding-left:150px;

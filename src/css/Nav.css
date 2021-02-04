@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -31,17 +31,6 @@
     padding-right: 30px;
 }
 
-.download{
-    position:fixed;
-    top:120px;
-    right:250px;
-}
-.download img{
-    width:200px;
-    height:220px;
-    cursor:pointer;
-}
-
 @media screen and (max-width:1050px){
     .nav-links{
         display:none;
@@ -49,9 +38,9 @@
     .nav-logo{
         padding-left:150px;
     }
-    .download{
+    /* .download{
         right:100px;
-    }
+    } */
 }
 @media screen and (max-width:750px){
     .nav-logo{
@@ -60,8 +49,8 @@
     .nav-links{
         display:none;
     }
-    .download{
+    /* .download{
         top: 70px;
         right:10px;
-    }
+    } */
 }

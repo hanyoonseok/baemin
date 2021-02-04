@@ -4,28 +4,3 @@
     box-sizing:border-box;
     font-family: 'PT Sans', sans-serif;
   }
-
-  .up{
-    height:100%;
-    animation:up 1s 1
-  }
-  .down{
-    height:100%;
-    animation:down 1s 1
-  }
-  @keyframes up{
-    0%{
-      transform:translateY(0);
-    }
-    100%{
-      transform:translateY(722px);
-    }
-  }
-  @keyframes down{
-    0%{
-      transform:translateY(0);
-    }
-    100%{
-      transform:translateY(-722px);
-    }
-  }
