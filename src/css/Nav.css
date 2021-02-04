@@ -17,13 +17,13 @@
 }
 
 .nav-logo{
-    padding-left: 300px;
+    padding-left: 20%;
     white-space: nowrap;
     font-family: 'Jua', sans-serif;
 }
 .nav-links{
     display:flex;
-    padding-right: 310px;
+    padding-right: 20%;
 }
 
 .navbar i{
@@ -35,22 +35,12 @@
     .nav-links{
         display:none;
     }
-    .nav-logo{
-        padding-left:150px;
-    }
-    /* .download{
-        right:100px;
-    } */
 }
-@media screen and (max-width:750px){
+@media screen and (max-width:800px){
     .nav-logo{
-        padding-left:50px;
+        padding-left:10%;
     }
     .nav-links{
         display:none;
     }
-    /* .download{
-        top: 70px;
-        right:10px;
-    } */
 }

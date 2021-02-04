@@ -11,8 +11,8 @@
     position:fixed;
     z-index: 10;
     padding:55px 0px;
-    top:75px;
-    right:265px;
+    top:10%;
+    right:15%;
 }
 .download img{
     width:200px;
@@ -53,9 +53,8 @@
 .text{
     position:absolute;
     width:100%;
-    top:0;
-    padding:0 300px;
-    padding-top: 160px;
+    top:20%;
+    left:20%;
     color:white;
     white-space: nowrap;
 }
@@ -67,7 +66,7 @@
 .app img{
     position:absolute;  
     bottom:0;
-    right:0;
+    left:66%;
     width:250px;
     height:280px;
     cursor:pointer;
@@ -75,14 +74,13 @@
 
 .driver{
     text-align: right;
-    padding-top: 530px;
+    padding-top: 540px;
     width:100%;
 }
 .driver img{
     width:200px;
     height:170px;
 }
-
 .slide{
     animation:slide 2s forwards;
 }
@@ -95,17 +93,62 @@
     }
 }
 
+.people{
+    opacity:0;
+    text-align: right;
+    padding-top:771px;
+    padding-right:17%;
+    width:100%;
+    height:100%;
+}
+.people img{
+    width:400px;
+    height:240px;
+}
+.rise{
+    animation: rrise 1.2s ease-in forwards;
+}
+@keyframes rrise{
+    0%{opacity:0;}
+    100%{padding-top:471px; opacity:1;}
+}
+
+.present{
+    opacity:1;
+    text-align: right;
+    padding-top:700px;
+    padding-right:20%;
+    width:100%;
+    height:100%;
+}
+.present img{
+    width:350px;
+    height:100%;
+}
+.rise2{
+    animation: rrise2 1.2s ease-in forwards;
+}
+@keyframes rrise2{
+    0%{opacity:0;}
+    100%{padding-top:310px; opacity:1;}
+}
+
+
 @media screen and (max-width:1050px){
-    .text{
-        padding-left:150px;
-    }
     .driver{
         animation:slide 1s reverse;
     }
+    .download{
+        top:0%;
+        right:0%;
+    }
+    .present{
+        padding-right: 5%;
+    }
 }
-@media screen and (max-width:750px){
+@media screen and (max-width:800px){
     .text{
-        padding-left:50px;
+        left:10%;
     }
     .section1 .text p{
         font-size:70px;
@@ -113,5 +156,17 @@
     .text p{
         font-size: 80px;
     }
-    
+    .app img{
+        left:50%;
+    }
+    .people{
+        padding-right: 0%;
+    }
+    .present{
+        padding-right: 0%;
+    }
+    .present img{
+        margin-top: 70px;
+        transform:scale(0.6);
+    }
 }
