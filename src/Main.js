@@ -68,7 +68,7 @@ export default function Main(){
             <div className="main" id="fullPage">
                 <div className="section section1">
                     <div className="text">
-                        <p>공복에<br/>떡볶이가<br/>그리울 때</p>
+                        <p>마음에도<br/>당 충전이<br/>필요할 때</p>
                     </div>
                     <div className="app">
                         <img src="../images/app.png" alt=""/>
