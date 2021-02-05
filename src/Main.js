@@ -8,23 +8,23 @@ export default function Main(){
         navigation:true,
         onLeave:function(origin, destination, direction){
             if(origin.index===0)
-            {setDown(true);setCircle(true)}
+            {setDown(true)}
             if(destination.index===0)
-            {setDown(false);setCircle(false)}
+            {setDown(false);setCircletop(40.4)}
             if(destination.index===1)
-            {setRider(true);setCircletop(50.5)}
+            {setRider(true);setCircletop(43.4)}
             if(destination.index===2)
-            {setPeople(true);setCircletop(54)}
+            {setPeople(true);setCircletop(46.4)}
             if(destination.index===3)
-            {setPresent(true);setCircletop(57.5)}
+            {setPresent(true);setCircletop(49.4)}
             if(destination.index===4)
-            {setBmart(true);setCircletop(61)}
+            {setBmart(true);setCircletop(52.4)}
             if(destination.index===5)
-            {setFlag(true);setCircletop(64.5)}
+            {setFlag(true);setCircletop(55.4)}
             if(destination.index===6)
-            {setCircle(false);setOpac(true);}
+            {setOpac(true);setCircletop(58.4)}
             if(origin.index===6)
-            {setCircle(true);setOpac(false);}
+            {setOpac(false);}
         }
     })
 
@@ -34,15 +34,14 @@ export default function Main(){
     const [present, setPresent] = useState(false);
     const [bmart, setBmart] = useState(false);
     const [flag, setFlag] = useState(false);
-    const [circle, setCircle]=useState(false);
-    const [circleTop, setCircletop]=useState(0);
+    const [circleTop, setCircletop]=useState(40.4);
     const [opac, setOpac]=useState(false);
 
     return(
         <>
             <nav className="navbar">
                 <div className={"nav-logo "+(opac?"opac":"")}>
-                    배달의 민족
+                    배달의 민족aaaa
                 </div>
                 <div className="nav-links">
                     <a href="https://www.facebook.com/smartbaedal"><i className="fab fa-facebook-f"></i></a>
@@ -53,15 +52,8 @@ export default function Main(){
                 <div className={"download " + (down?"down":"")}>
                     <img src="../images/blackapp.png" alt=""/>
                 </div>
-                <div className={"navigation "+(circle?"on":"")}>
+                <div className={"navigation "}>
                     <div className="circle" style={{top:`${circleTop}%`}}></div>
-                    <ul>
-                        <li>●</li>
-                        <li>●</li>
-                        <li>●</li>
-                        <li>●</li>
-                        <li>●</li>
-                    </ul>
                 </div>
             </nav>
             <div className="main" id="fullPage">
@@ -146,7 +138,7 @@ export default function Main(){
                             통신판매업: 서울 송파-0515<br/><br/>
                             전자금융분쟁처리<br/>
                             대표전화 : 1600-0987 | 팩스 : 050-6050-0400<br/>
-                            대표메일 : help@woowahan.com aa
+                            대표메일 : help@woowahan.com
                             </p>
                         </div>
                     </div>
