@@ -31,14 +31,22 @@
     padding-right: 30px;
 }
 
+.scroll{
+    position:absolute;
+    bottom:10%;
+    right:50%;
+}
 @media screen and (max-width:1050px){
+    .nav-logo{
+        padding-left:10%;
+    }
     .nav-links{
         display:none;
     }
 }
 @media screen and (max-width:800px){
     .nav-logo{
-        padding-left:10%;
+        padding-left:5%;
     }
     .nav-links{
         display:none;

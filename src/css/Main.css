@@ -5,6 +5,37 @@
     width: 100%;
 }
 
+.navigation{
+    opacity:0;
+    position:fixed;
+    right:5%;
+    top:50%;
+    color:white;
+}
+.navigation ul{
+    list-style-type: none;
+}
+.navigation li{
+    font-size: 10px;
+    line-height: 2.5;
+}
+.circle{
+    position:fixed;
+    width:20px;
+    height:20px;
+    right:4.65%;
+    border-radius: 10px;
+    border:2px solid white;
+    background-color: transparent;
+}
+.on{
+    animation:on 1s forwards;
+}
+@keyframes on{
+    0%{}
+    100%{opacity:1}
+}
+
 .download{
     opacity:0;
     display:flex;
@@ -53,7 +84,7 @@
 .text{
     position:absolute;
     width:100%;
-    top:20%;
+    top:22%;
     left:20%;
     color:white;
     white-space: nowrap;
@@ -61,6 +92,11 @@
 .text p{
     font-family: 'Jua', sans-serif;
     font-size: 100px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.text h5{
+    font-weight:normal;
 }
 
 .app img{
@@ -110,7 +146,7 @@
 }
 @keyframes rrise{
     0%{opacity:0;}
-    100%{padding-top:471px; opacity:1;}
+    100%{padding-top:472px; opacity:1;}
 }
 
 .present{
@@ -133,27 +169,174 @@
     100%{padding-top:310px; opacity:1;}
 }
 
+.bmart{
+    text-align: right;
+    width:100%;
+    padding-top: 340px;
+}
+.bmart img{
+    width:400px;
+    height:260px;
+}
+.slide2{
+    animation:slide2 1.5s forwards
+}
+@keyframes slide2{
+    0%{
+    }
+    100%{
+        transform:translateX(-400px);
+    }
+}
+
+.flag{
+    text-align: right;
+    width:100%;
+    padding-top:670px;
+    padding-right:23%;
+}
+.flag img{
+    width:325px;
+    height:370px;
+}
+.rise3{
+    animation:rise3 1.5s forwards;
+}
+@keyframes rise3{
+    0%{}
+    100%{padding-top:342px;}
+}
+
+.footer{
+    background-color: white;
+    width:100%;
+    height:100vh;
+    padding:6.5% 22%;
+    z-index: 100;
+}
+.footer .text{
+    color:black;
+}
+.footer .container{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.footer .upper{
+    position:relative;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+.footer .bigtitle{
+    position:absolute;
+    top:0;
+    right:18%;
+    font-size: 35px;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+.footer h2{
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight:600;
+}
+.footer h4{
+    margin-top: 10px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight:550;
+    font-size: 23px;
+}
+.footer .links{
+    position:absolute;
+    top:0;
+    left:0;
+    font-size: 32px;
+    white-space: nowrap;
+}
+.footer .page{
+    display:flex;
+    line-height: 1.5;
+    text-decoration-line: underline;
+}
+.footer .page div{
+    padding-right: 23px;
+}
+.footer .links div{
+    font-family: 'Do Hyeon', sans-serif;
+}
+.footer .links .icons{
+    width:200px;
+    margin-top: 35px;
+    display:flex;
+    justify-content: space-between;
+}
+.foot{
+    position:absolute;
+    bottom:40%;
+    line-height: 1.5;
+    font-family: 'Do Hyeon', sans-serif;
+    color:rgb(82, 80, 80);
+    white-space: nowrap;
+}
 
 @media screen and (max-width:1050px){
+    .text{left:10%}
     .driver{
         animation:slide 1s reverse;
+    }
+    .bmart{
+        padding-top: 520px;
+        animation:slide2 1s reverse;
+        transform:scale(0.8);
     }
     .download{
         top:0%;
         right:0%;
+        transform:scale(1.2);
     }
     .present{
         padding-right: 5%;
     }
+    .flag{
+        padding-right: 5%;
+    }
+    .footer{
+        padding:5% 5%;
+    }
+    .footer .bigtitle{
+        position:unset;
+    }
+    .footer .links{
+        position:unset;
+    }
+    .footer .upper{
+        flex-direction: column;
+        justify-content: left;
+        align-items: unset;
+    }
+    .footer .links{
+        margin-top: 50px;
+    }
+    .footer .page{
+        font-size: 24px;
+    }
+    .foot{
+        position:unset;
+    }
+    .circle{
+        right:4.4%;
+    }
 }
 @media screen and (max-width:800px){
     .text{
-        left:10%;
-    }
-    .section1 .text p{
-        font-size:70px;
+        left:5%;
     }
     .text p{
+        font-size: 70px;
+    }
+    .section1 p{
         font-size: 80px;
     }
     .app img{
@@ -168,5 +351,16 @@
     .present img{
         margin-top: 70px;
         transform:scale(0.6);
+    }
+    .flag{
+        margin-left: 40px;
+        padding-right: 0%;
+    }
+    .circle{
+        right:4.0%;
+    }
+    .foot{
+        font-size: 12px;
+        margin-top: 100px;
     }
 }
