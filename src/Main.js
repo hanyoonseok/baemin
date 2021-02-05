@@ -3,20 +3,9 @@ import './css/Main.css'
 import fullpage from 'fullpage.js'
 
 export default function Main(){
-    const [rider, setRider]=useState(false);
-    const [down, setDown] = useState(false);
-    const [people, setPeople] = useState(false);
-    const [present, setPresent] = useState(false);
-    const [bmart, setBmart] = useState(false);
-    const [flag, setFlag] = useState(false);
-    const [circle, setCircle]=useState(false);
-    const [circleTop, setCircletop]=useState(0);
-    const [opac, setOpac]=useState(false);
-    
     new fullpage('#fullPage',{
         autoScrolling:true,
         navigation:true,
-        //navigationTooltips:['1','2','3','4'],
         onLeave:function(origin, destination, direction){
             if(origin.index===0)
             {setDown(true);setCircle(true)}
@@ -39,6 +28,16 @@ export default function Main(){
         }
     })
 
+    const [rider, setRider]=useState(false);
+    const [down, setDown] = useState(false);
+    const [people, setPeople] = useState(false);
+    const [present, setPresent] = useState(false);
+    const [bmart, setBmart] = useState(false);
+    const [flag, setFlag] = useState(false);
+    const [circle, setCircle]=useState(false);
+    const [circleTop, setCircletop]=useState(0);
+    const [opac, setOpac]=useState(false);
+
     return(
         <>
             <nav className="navbar">
@@ -54,7 +53,7 @@ export default function Main(){
                 <div className={"download " + (down?"down":"")}>
                     <img src="../images/blackapp.png" alt=""/>
                 </div>
-                <div className={"navigation  "+(circle?"on":"")}>
+                <div className={"navigation "+(circle?"on":"")}>
                     <div className="circle" style={{top:`${circleTop}%`}}></div>
                     <ul>
                         <li>●</li>
@@ -67,6 +66,7 @@ export default function Main(){
             </nav>
             <div className="main" id="fullPage">
                 <div className="section section1">
+                    <div className="background"></div>
                     <div className="text">
                         <p>마음에도<br/>당 충전이<br/>필요할 때</p>
                     </div>
@@ -101,7 +101,7 @@ export default function Main(){
                         <img src="../images/present.png" alt=""/>
                     </div>
                 </div>
-                <div className="section">
+                <div className="section" >
                     <div className="text">
                         <p>초소량<br/>번쩍배달<br/>B마트</p>
                         <h5>마트까지 가지 않아도, 많이 사지 않아도<br/>주문하신 상품을 바로 배달해드립니다.<br/><br/>서울, 인천 및 경기 일부 지역에서 서비스 이용 가능!</h5>                        
@@ -110,7 +110,7 @@ export default function Main(){
                         <img src="../images/bmart.png" alt=""/>
                     </div>
                 </div>
-                <div className="section">
+                <div className="section" >
                     <div className="text">
                         <p>할인받고<br/>결제까지<br/>10초면 끗!</p>
                         <h5>배민페이, 네이버페이 등은 물론<br/>각종 신용카드까지 결제 가능!</h5>
@@ -146,7 +146,7 @@ export default function Main(){
                             통신판매업: 서울 송파-0515<br/><br/>
                             전자금융분쟁처리<br/>
                             대표전화 : 1600-0987 | 팩스 : 050-6050-0400<br/>
-                            대표메일 : help@woowahan.com 
+                            대표메일 : help@woowahan.com aa
                             </p>
                         </div>
                     </div>

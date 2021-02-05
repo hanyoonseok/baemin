@@ -112,15 +112,26 @@ a:visited {text-decoration: none;background-color: transparent;color:inherit}
     height:100vh;
     width:100%;
     position:relative;
+    /* background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation:sscale 2s 1; */
+}
+.section{
+    background-color: #2ac1bc;
+    position:relative;
+}
+
+.background{
+    position:absolute;
+    width:100%;
+    height:100vh;
     background-image: url("../images/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     animation:sscale 2s 1;
-}
-.section{
-    background-color: #2ac1bc;
-    position:relative;
 }
 
 .text{
@@ -140,7 +151,6 @@ a:visited {text-decoration: none;background-color: transparent;color:inherit}
 .text h5{
     font-weight:normal;
 }
-
 .app img{
     position:absolute;  
     bottom:0;
