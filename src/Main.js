@@ -41,7 +41,7 @@ export default function Main(){
         <>
             <nav className="navbar">
                 <div className={"nav-logo "+(opac?"opac":"")}>
-                    배달의 민족aaaa
+                    배달의 민족
                 </div>
                 <div className="nav-links">
                     <a href="https://www.facebook.com/smartbaedal"><i className="fab fa-facebook-f"></i></a>
