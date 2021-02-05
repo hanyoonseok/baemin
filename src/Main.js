@@ -11,6 +11,7 @@ export default function Main(){
     const [flag, setFlag] = useState(false);
     const [circle, setCircle]=useState(false);
     const [circleTop, setCircletop]=useState(0);
+    const [opac, setOpac]=useState(false);
     
     new fullpage('#fullPage',{
         autoScrolling:true,
@@ -32,27 +33,38 @@ export default function Main(){
             if(destination.index===5)
             {setFlag(true);setCircletop(64.5)}
             if(destination.index===6)
-            {setCircle(false)}
+            {setCircle(false);setOpac(true);}
             if(origin.index===6)
-            {setCircle(true)}
+            {setCircle(true);setOpac(false);}
         }
     })
 
     return(
         <>
-            <div className={"download " + (down?"down":"")}>
-                <img src="../images/blackapp.png" alt=""/>
-            </div>
-            <div className={"navigation  "+(circle?"on":"")}>
-                <div className="circle" style={{top:`${circleTop}%`}}></div>
-                <ul>
-                    <li>●</li>
-                    <li>●</li>
-                    <li>●</li>
-                    <li>●</li>
-                    <li>●</li>
-                </ul>
-            </div>
+            <nav className="navbar">
+                <div className={"nav-logo "+(opac?"opac":"")}>
+                    배달의 민족
+                </div>
+                <div className="nav-links">
+                    <a href="https://www.facebook.com/smartbaedal"><i className="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/baemin_official/"><i className="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/user/smartbaedal2"><i className="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/smartbaedal"><i className="fab fa-twitter"></i></a>
+                </div>
+                <div className={"download " + (down?"down":"")}>
+                    <img src="../images/blackapp.png" alt=""/>
+                </div>
+                <div className={"navigation  "+(circle?"on":"")}>
+                    <div className="circle" style={{top:`${circleTop}%`}}></div>
+                    <ul>
+                        <li>●</li>
+                        <li>●</li>
+                        <li>●</li>
+                        <li>●</li>
+                        <li>●</li>
+                    </ul>
+                </div>
+            </nav>
             <div className="main" id="fullPage">
                 <div className="section section1">
                     <div className="text">
@@ -120,10 +132,10 @@ export default function Main(){
                                     <div>배민사장님광장<br/>라이더채용</div>
                                 </div>
                                 <div className="icons">
-                                    <i className="fab fa-facebook-f"></i>
-                                    <i className="fab fa-instagram"></i>
-                                    <i className="fab fa-youtube"></i>
-                                    <i className="fab fa-twitter"></i>
+                                    <a href="https://www.facebook.com/smartbaedal"><i className="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/baemin_official/"><i className="fab fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/user/smartbaedal2"><i className="fab fa-youtube"></i></a>
+                                    <a href="https://www.facebook.com/smartbaedal"><i className="fab fa-twitter"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +146,7 @@ export default function Main(){
                             통신판매업: 서울 송파-0515<br/><br/>
                             전자금융분쟁처리<br/>
                             대표전화 : 1600-0987 | 팩스 : 050-6050-0400<br/>
-                            대표메일 : help@woowahan.comaaaaaaa
+                            대표메일 : help@woowahan.com a
                             </p>
                         </div>
                     </div>

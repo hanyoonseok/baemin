@@ -4,6 +4,47 @@
     height:100%;
     width: 100%;
 }
+i{
+    cursor:pointer;
+}
+a{
+    height:min-content;
+}
+a:link {text-decoration: none;background-color: transparent;color:inherit}
+a:visited {text-decoration: none;background-color: transparent;color:inherit}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
+    width:100%;
+    height:100vh;
+    padding:55px 0px;
+    color:white;
+    font-size: 30px;
+}
+.nav-logo{
+    padding-left: 20%;
+    white-space: nowrap;
+    font-family: 'Jua', sans-serif;
+}
+.opac{
+    opacity:0;
+}
+.nav-links{
+    display:flex;
+    padding-right: 20%;
+}
+.navbar i{
+    font-size: 30px;
+    padding-right: 30px;
+}
+
+.scroll{
+    position:absolute;
+    bottom:10%;
+    right:50%;
+}
 
 .navigation{
     opacity:0;
@@ -18,6 +59,7 @@
 .navigation li{
     font-size: 10px;
     line-height: 2.5;
+    cursor:pointer;
 }
 .circle{
     position:fixed;
@@ -48,13 +90,13 @@
 .download img{
     width:200px;
     height:220px;
-    cursor:pointer;
 }
 @keyframes ddown{
     0%{opacity:0;}
     100%{opacity:1;}
 }
 .down{
+    cursor:pointer;
     animation:ddown 1s ease-in forwards;
 }
 
@@ -146,13 +188,13 @@
 }
 @keyframes rrise{
     0%{opacity:0;}
-    100%{padding-top:472px; opacity:1;}
+    100%{padding-top:475px; opacity:1;}
 }
 
 .present{
     opacity:1;
     text-align: right;
-    padding-top:700px;
+    padding-top:710px;
     padding-right:20%;
     width:100%;
     height:100%;
@@ -282,6 +324,12 @@
 }
 
 @media screen and (max-width:1050px){
+    .nav-logo{
+        padding-left:10%;
+    }
+    .nav-links{
+        display:none;
+    }
     .text{left:10%}
     .driver{
         animation:slide 1s reverse;
@@ -330,6 +378,12 @@
     }
 }
 @media screen and (max-width:800px){
+    .nav-logo{
+        padding-left:5%;
+    }
+    .nav-links{
+        display:none;
+    }
     .text{
         left:5%;
     }
