@@ -146,7 +146,7 @@ export default function Main(){
                             통신판매업: 서울 송파-0515<br/><br/>
                             전자금융분쟁처리<br/>
                             대표전화 : 1600-0987 | 팩스 : 050-6050-0400<br/>
-                            대표메일 : help@woowahan.com
+                            대표메일 : help@woowahan.com 
                             </p>
                         </div>
                     </div>

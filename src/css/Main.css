@@ -21,7 +21,7 @@ a:visited {text-decoration: none;background-color: transparent;color:inherit}
     height:100vh;
     padding:55px 0px;
     color:white;
-    font-size: 30px;
+    font-size: 38px;
 }
 .nav-logo{
     padding-left: 20%;
@@ -188,7 +188,7 @@ a:visited {text-decoration: none;background-color: transparent;color:inherit}
 }
 @keyframes rrise{
     0%{opacity:0;}
-    100%{padding-top:475px; opacity:1;}
+    100%{padding-top:481px; opacity:1;}
 }
 
 .present{
